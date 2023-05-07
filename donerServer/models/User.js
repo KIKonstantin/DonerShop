@@ -6,7 +6,7 @@ const userSchema = new Schema({
         required: true,
         unique: true,
         match:[
-            /^[a-zA-Z0-9]+@\w{2,4}$/i,
+            /^[a-zA-Z0-9]+@\w+.[A-Za-z]{2,4}$/i,
             "Not valid email"
         ],
     },
